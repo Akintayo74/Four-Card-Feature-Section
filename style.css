@@ -40,12 +40,47 @@ header p{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 10px;
 }
 
 .box{
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 300px; */
     border: 1px solid blue;
+    padding: 25px;
+    /* box-shadow: 1px 2px 10px 0px hsl(234, 12%, 34%); */
+    background-color: white;
+    
+}
+
+.container p{
+    color: hsl(229, 6%, 66%);;
+}
+
+.container img{
+    align-self: flex-end;
+}
+
+.team-builder{
+    grid-column: 5 / 9;
+    grid-row: 1;  
+}
+
+.supervisor{
+    /* grid-column: 10 / 13; */
+    grid-row: 2;
+}
+
+.calculator{
+    grid-column: 5 / 7;
+    grid-row: 2;
+}
+
+.karma{
+    /* grid-column: 6 / 9; */
+    grid-row: 3;
 }
 
 
