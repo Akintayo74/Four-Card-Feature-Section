@@ -1,0 +1,59 @@
+
+@media(min-width: 800px){
+    .container{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .supervisor{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .team-builder{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .karma{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .calculator{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container{
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .supervisor{
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        place-self: center;
+    }
+
+    .team-builder{
+        grid-column: 2;
+        grid-row: 1;
+        place-self: center;
+    }
+
+    .karma{
+        grid-column: 2;
+        grid-row: 2;
+        place-self: center;
+    }
+
+    .calculator{
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        place-self: center; 
+    }
+}
